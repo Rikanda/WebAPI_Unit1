@@ -27,7 +27,8 @@ namespace Unit1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            
+            services.AddSingleton<ValuesHolder>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
